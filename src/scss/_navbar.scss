@@ -1,0 +1,60 @@
+header {
+    background-color: red;
+    width: 100%;
+}
+
+.container-item-header {
+    padding: 20px;
+}
+
+.mqMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.bars-menu {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: end;
+}
+
+.bars-menu i {
+    font-size: 1.3rem;
+}
+
+.mqDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .mqMobile {
+        display: none;
+    }
+
+    .mqDesktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .mqDesktop .logo {
+        display: flex;
+        flex-basis: 30%;
+    }
+
+    .mqDesktop .nav-link-desktop {
+        display: flex;
+        flex-basis: 70%;
+    }
+
+    .nav-link-desktop ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+}
