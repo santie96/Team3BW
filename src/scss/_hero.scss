@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/img/cantina-botti-di-vino-in-una-cantina-in-spagna_223582-823.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-title);
+  font-weight: 500;
+}
+
+.hero-p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: var(--font-main);
+}
+
+.hero-a {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #d4af37;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition:
+    background-color,
+    transform 0.3s ease;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: var(--font-main);
+  
+}
+
+.hero-a:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
