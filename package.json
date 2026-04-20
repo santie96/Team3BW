@@ -1,0 +1,25 @@
+{
+  "name": "cantina_vini",
+  "version": "1.0.0",
+  "description": "Sito web Poggio del mosto",
+  "homepage": "https://github.com/santie96/Team3BW#readme",
+  "bugs": {
+    "url": "https://github.com/santie96/Team3BW/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santie96/Team3BW.git"
+  },
+  "license": "ISC",
+  "author": "Team3BW",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "sass --watch src/scss/style.scss:src/dist/css/style.css --load-path=node_modules",
+    "build-css": "sass src/scss/style.scss src/dist/css/style.css --load-path=node_modules"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.99.0"
+  }
+}
