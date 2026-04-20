@@ -1,60 +1,107 @@
 header {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.container-item-header {
-    padding: 20px;
-}
-
-.mqMobile {
-    width: 100%;
+.nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    width: 100%;
+    background-color: black;
 }
 
-.logo {
+.nav-logo {
     display: flex;
-    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-basis: 10%;
 }
 
-.bars-menu {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: end;
-}
-
-.bars-menu i {
-    font-size: 1.3rem;
-}
-
-.mqDesktop {
+.logo_desktop img {
     display: none;
 }
 
-@media screen and (min-width: 992px) {
-    .mqMobile {
+.logo_mobile img {
+    width: 140px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav_mobile_bars i {
+    font-size: 1.5rem;
+    color: #cda434;
+}
+
+.nav_mobile_bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+@media (min-width: 700px) {
+    .logo_mobile {
         display: none;
     }
 
-    .mqDesktop {
+    .logo_desktop img {
+        display: flex;
+        width: 150px;
+        margin-left: 5px;
+    }
+
+    .nav_mobile_bars {
+        display: none;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    .nav-logo {
+        flex: 0 0 auto;
+    }
+
+    .nav-links {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
-    .mqDesktop .logo {
-        display: flex;
-        flex-basis: 30%;
-    }
 
-    .mqDesktop .nav-link-desktop {
+    .nav-links ul {
         display: flex;
-        flex-basis: 70%;
-    }
-
-    .nav-link-desktop ul {
-        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
         list-style: none;
-        gap: 30px;
+        margin: 0;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: white;
+        position: relative;
+    }
+
+    .nav-links ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 3px;
+        background-color: #cda434;
+        transition: width 0.3s ease;
+    }
+
+    .nav-links ul li a:hover::after {
+        width: 100%;
     }
 }
