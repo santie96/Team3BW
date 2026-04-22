@@ -1,3 +1,8 @@
+main {
+  display: block;
+  overflow: hidden; /* Blocca il collasso dei margini */
+}
+
 .hero {
   position: relative;
   background-image:
@@ -6,7 +11,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 140px 0;
+  padding: 80px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -27,14 +32,14 @@
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
   font-family: var(--font-title);
   font-weight: 500;
 }
 
 .hero-p {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 400;
   max-width: 800px;
   line-height: 1.6;
@@ -45,7 +50,7 @@
 .hero-a {
   display: inline-block;
   padding: 20px 30px;
-  background-color: #d4af37;
+  background-color: var(--color-secondary);
   color: black;
   text-decoration: none;
   font-weight: 700;
@@ -53,10 +58,9 @@
   transition:
     background-color,
     transform 0.3s ease;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 10px;
   font-family: var(--font-main);
-  
 }
 
 .hero-a:hover {
