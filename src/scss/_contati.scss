@@ -1,0 +1,54 @@
+// Variáveis
+$brand-color: rgb(26, 26, 26);
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+main {
+  background-color: #0f0f0f;
+}
+
+.content-box {
+  background-color: $brand-color;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  @include tablet {
+    padding: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 1.75rem;
+    }
+  }
+
+  // Ajuste dos inputs para touch (mobile)
+  .form-control {
+    padding: 0.75rem;
+    border: 1px solid transparent;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+      border-color: white;
+    }
+  }
+}
+
+.ratio-16x9 {
+  max-height: 500px;
+
+  iframe {
+    border-radius: 4px;
+  }
+}
