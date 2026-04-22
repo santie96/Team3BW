@@ -1,64 +1,387 @@
 @charset "UTF-8";
+main {
+  display: block;
+  overflow: hidden; /* Blocca il collasso dei margini */
+}
+
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/cantina-botti-di-vino-in-una-cantina-in-spagna_223582-823.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-title);
+  font-weight: 500;
+}
+
+.hero-p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: var(--font-main);
+}
+
+.hero-a {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: var(--color-secondary);
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color, transform 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-family: var(--font-main);
+}
+
+.hero-a:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.catalogo {
+  background-color: var(--color-bg-dark);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-items-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.article-s {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  border-radius: 4px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.article-s:hover {
+  border: 1px solid var(--color-secondary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.article-s a {
+  text-decoration: none;
+  font-family: var(--font-main);
+}
+
+.intestazione-card-s h2 {
+  color: var(--color-secondary);
+  font-family: var(--font-titles);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.p-card-s {
+  color: #d1d1d1;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.container-img-s {
+  width: 100%;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+.container-img-s img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+}
+
+.article-s:hover .container-img-s img {
+  filter: grayscale(0%);
+}
+
+.container-btn-s {
+  margin-top: 30px;
+}
+
+.btn-add-carrello {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  background-color: var(--color-secondary);
+  transition: background-color, transform 0.3s ease;
+}
+
+.btn-add-carrello:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.carousel {
+  margin: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.container-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: 200%;
+  animation: scroll 70s linear infinite;
+}
+
+.track img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.servizi {
+  background-color: var(--color-bg-dark);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-items-servizi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.article-h {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  border-radius: 4px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.article-h a {
+  text-decoration: none;
+  font-family: var(--font-main);
+}
+
+.article-h:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.intestazione-card h2 {
+  color: var(--color-secondary);
+  font-family: var(--font-titles);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.p-card {
+  color: #d1d1d1;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.container-img {
+  width: 100%;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+.container-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+}
+
+.article-h:hover .container-img img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.container-btn {
+  margin-top: 30px;
+}
+
+.btn-add-carrello {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  background-color: var(--color-secondary);
+  transition: background-color, transform 0.3s ease;
+}
+
+.btn-add-carrello:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
 header {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.container-item-header {
-  padding: 20px;
-}
-
-.mqMobile {
-  width: 100%;
+.nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  width: 100%;
+  background-color: #212529;
 }
 
-.logo {
+.nav-logo {
   display: flex;
-  flex-basis: 50%;
+  justify-content: flex-start;
+  flex-basis: 10%;
 }
 
-.bars-menu {
-  display: flex;
-  flex-basis: 50%;
-  justify-content: end;
-}
-
-.bars-menu i {
-  font-size: 1.3rem;
-}
-
-.mqDesktop {
+.logo_desktop img {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
-  .mqMobile {
+.logo_mobile img {
+  width: 140px;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav_mobile_bars i {
+  font-size: 1.5rem;
+  color: #cda434;
+}
+
+.nav_mobile_bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 15%;
+}
+
+@media (min-width: 700px) {
+  .logo_mobile {
     display: none;
   }
-  .mqDesktop {
+  .logo_desktop img {
+    display: flex;
+    width: 150px;
+    margin-left: 5px;
+  }
+  .nav_mobile_bars {
+    display: none;
+  }
+  .nav-container {
+    justify-content: center;
+  }
+  .nav-logo {
+    flex: 0 0 auto;
+  }
+  .nav-links {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
-  .mqDesktop .logo {
+  .nav-links ul {
     display: flex;
-    flex-basis: 30%;
-  }
-  .mqDesktop .nav-link-desktop {
-    display: flex;
-    flex-basis: 70%;
-  }
-  .nav-link-desktop ul {
-    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
     list-style: none;
-    gap: 30px;
+    margin: 0;
+  }
+  .nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+  }
+  .nav-links ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #cda434;
+    transition: width 0.3s ease;
+  }
+  .nav-links ul li a:hover::after {
+    width: 100%;
   }
 }
 footer {
   background-color: #212529;
   color: #f8f9fa;
-  margin: 30px 0 30px 0;
 }
 
 footer a {
@@ -86,7 +409,7 @@ footer a:hover {
 }
 
 .border-top-custom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -396,6 +719,15 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+:root {
+  /* <--- Due punti, non il punto! */
+  --font-title: "Prata", serif;
+  --font-main: 'Playfair Display', serif;
+  --color-secondary: #d4af37;
+  --color-third: #1a1a1a;
+  --color-bg-dark: #0f0f0f;
 }
 
 /*!
