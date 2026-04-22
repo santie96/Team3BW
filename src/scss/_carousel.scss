@@ -1,1 +1,36 @@
 
+.carousel {
+  margin: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.container-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 70s linear infinite;
+}
+
+.track img {
+  width: calc(800px / 2);
+  height: 300px;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

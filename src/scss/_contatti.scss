@@ -1,4 +1,4 @@
-// Variáveis
+// Variabili
 $brand-color: rgb(26, 26, 26);
 
 @mixin tablet {
@@ -33,7 +33,6 @@ main {
     }
   }
 
-  // Ajuste dos inputs para touch (mobile)
   .form-control {
     padding: 0.75rem;
     border: 1px solid transparent;

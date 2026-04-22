@@ -1,9 +1,16 @@
-@use "./hero";
-@use "./card-selezione";
-@use "./carousel";
+@use '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@use "./card";
+@use './color-fonts';
 
-@use "./navbar";
-@use "./footer";
-@use "./normalize";
+
+@use './navbar';
+@use './hero';
+@use './carousel';
+@use './card';
+@use './catalogo';
+@use './card-selezione';
+@use './contatti';
+@use './modal';
+@use './footer';
+
+
