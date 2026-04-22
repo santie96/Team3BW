@@ -1,96 +1,156 @@
+.mqDesktop {
+    display: none;
+}
+
 header {
+    width: 100%;
+    height: 120px;
+    background-color: red;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding: 20px 30px;
 }
 
-.nav-container {
+.container-nav {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px;
-    width: 100%;
-    background-color: black;
 }
 
-.nav-logo {
+.logo {
     display: flex;
-    justify-content: flex-start;
-    flex-basis: 10%;
+    flex-basis: 50%;
 }
 
-.logo_desktop img {
+.logo img {
+    width: 100px;
+}
+
+.mqMobile {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+
+.container-bars {
+    display: flex;
+}
+
+.open-bars i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.closed-bars {
     display: none;
 }
 
-.logo_mobile img {
-    width: 140px;
+.closed-bars i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    user-select: none;
 }
 
-.nav-links {
-    display: none;
+
+.bars-mobile {
+    justify-content: flex-end;
+    position: absolute;
+    top: 120px;
+    right: -180px;
+    background-color: purple;
+    padding: 30px 40px;
+    transition: right 0.3s ease;
+    user-select: none;
 }
 
-.nav_mobile_bars i {
-    font-size: 1.5rem;
-    color: #cda434;
+.bars-mobile.open {
+    right: 0;
 }
 
-.nav_mobile_bars {
+.bars-mobile ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 15%;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (min-width: 700px) {
-    .logo_mobile {
+.bars-mobile ul li {
+    list-style: none;
+}
+
+.bars-mobile ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.bars-mobile ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #cda434;
+    transition: width 0.3s ease;
+}
+
+.bars-mobile ul li a:hover::after {
+    width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+    .mqMobile {
         display: none;
     }
 
-    .logo_desktop img {
+
+    header {
+        width: 100%;
+        height: 150px;
+        background-color: red;
         display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container-nav {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .logo {
+        flex-basis: 0;
+        justify-content: end;
+    }
+
+    .logo img {
         width: 150px;
-        margin-left: 5px;
     }
 
-    .nav_mobile_bars {
-        display: none;
-    }
-
-    .nav-container {
-        justify-content: center;
-    }
-
-    .nav-logo {
-        flex: 0 0 auto;
-    }
-
-    .nav-links {
+    .mqDesktop {
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
-
-    .nav-links ul {
+    .mqDesktop ul {
         display: flex;
-        align-items: center;
+        gap: 30px;
         flex-wrap: wrap;
-        gap: 60px;
-        list-style: none;
-        margin: 0;
     }
 
-    .nav-links ul li a {
+    .mqDesktop ul li {
+        list-style: none;
+    }
+
+    .mqDesktop ul li a {
         text-decoration: none;
-        font-size: 1.2rem;
         color: white;
+        font-size: 1.2rem;
         position: relative;
     }
 
-    .nav-links ul li a::after {
+    .mqDesktop ul li a::after {
         content: "";
         position: absolute;
         left: 0;
@@ -101,7 +161,8 @@ header {
         transition: width 0.3s ease;
     }
 
-    .nav-links ul li a:hover::after {
+    .mqDesktop ul li a:hover::after {
         width: 100%;
     }
+
 }
