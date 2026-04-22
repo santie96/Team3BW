@@ -12404,7 +12404,7 @@ footer .list-inline-item a:hover {
 }
 
 p {
-  color: var(--color-tex);
+  color: var(--color-text);
 }
 
 .font-serif {
@@ -12450,7 +12450,7 @@ p {
 .divider-gold {
   width: 80px;
   height: 1px;
-  background-color: var(--oro);
+  background-color: var(--color-secondary);
   margin: 2rem auto;
 }
 
