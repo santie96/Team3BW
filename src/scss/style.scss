@@ -1,15 +1,13 @@
-@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@use './color-fonts';
+@use "./color-fonts";
 
-
-@use './navbar';
-@use './hero';
-@use './carousel';
-@use './servizi';
-@use './catalogo';
-@use './contatti';
-@use './modal';
-@use './footer';
-
-
+@use "./navbar";
+@use "./hero";
+@use "./carousel";
+@use "./servizi";
+@use "./catalogo";
+@use "./contatti";
+@use "./modal";
+@use "./footer";
+@use "./chisiamo";
