@@ -19,140 +19,124 @@
   </head>
 
   <body>
-    <header>
-      <!-- view Phone -->
-      <div id="mqMobile">
-        <section class="cntLogo">
-          <a href="#"><img src="" alt="logo-poggio-del-mosto" /></a>
-        </section>
-
-        <section id="menuMobile">
-          <i id="iconbarMobileOpen" class="ri-menu-line"></i>
-          <nav id="sideBarMobile">
-            <div id="sideBarTopMobile">
-              <img src="" alt="logo-poggio-del-mosto" />
-              <i id="iconbarMobileClosed" class="fa-solid fa-xmark"></i>
-            </div>
-            <ul id="sideBarContentMobile">
-              <li><a href="#">Come funziona Diabby</a></li>
-              <li><a href="#">Diabetologi</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Chi siamo</a></li>
-              <li><a href="#">Contatti</a></li>
-            </ul>
-            <div id="sideBarBottomMobile">
-              <button class="btnsub"><span>Iscriviti</span></button>
-              <button class="btnlog"><span>Accedi</span></button>
-            </div>
-          </nav>
-        </section>
-      </div>
-
-      <!-- view Desktop -->
-      <div id="mqDesktop">
-        <section class="cntLogo">
-          <a href="#"
-            ><img src="ASSETS/MEDIA/logo-diabby.png" alt="logo-diabby"
+    <header class="nav">
+      <div class="nav-container">
+        <div class="nav_logo">
+          <a href="#" class="logo_desktop"
+            ><img
+              src="./assets/img/ChatGPT_Image_20_apr_2026_21_30_23.webp"
+              alt="logo-poggio del mosto"
           /></a>
-        </section>
 
-        <section id="menuDesktop">
-          <nav id="topBarDesktop">
-            <ul>
-              <li><a href="#">Come funziona Diabby</a></li>
-              <li><a href="#">Diabetologi</a></li>
-              <li><a href="#">Chi siamo</a></li>
-              <li><a href="#">Assistenza</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contatti</a></li>
-            </ul>
-          </nav>
-        </section>
+          <a href="#" class="logo_mobile"
+            ><img
+              src="./ASSETS/img/ChatGPT Image 20 apr 2026, 21_30_23.png"
+              alt="logo-poggio del mosto"
+          /></a>
+        </div>
 
-        <section id="cntPersonalArea">
-          <a href="#"
-            ><i class="fa-solid fa-user"></i> <span>Area personale</span></a
-          >
-        </section>
+        <nav role="navigation" class="nav-links">
+          <ul>
+            <li><a href="./catalogo.html">Catalogo</a></li>
+            <li>
+              <a href="./visite_degustazioni.html">Visite e degustazione</a>
+            </li>
+            <li><a href="./Eventi.html">Eventi</a></li>
+            <li><a href="./chi_siamo.html">Chi siamo</a></li>
+            <li><a href="./Contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav_mobile_bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </header>
-
     <main>
-          <section>
-            <div class="container">
-                <!-- INICIO ONDE ESTOU -->
-                <nav class="mb-4 bg-light">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="" title="Home"></a> Inicio</li>
-                        <li class="breadcrumb-item active">Contatos</li>
-                    </ol>
-                </nav>
-                <!-- FIM ONDE ESTOU -->
-                <div class="row g-0">
-                    <!-- INICI LADO ESQUERDO  -->
-                    <div class="col-md-5">
-                        <img src="/imgs/contati.jpg" class="img-fluid h-100 w-100" alt="">
-
-                    </div>
-                    <!-- FIM LADO ESQUERDO  -->
-
-                    <!-- INICI LADO DIREITO  -->
-                    <div class="col-md-7 ps-5 mt-5">
-                        <H4>Fale Conosco</H4>
-                        <form action="" method="POST">
-                            <div class="form-group mb-3">
-                                <label for="" class="form-label">Nome Cognome :</label>
-                                <input type="text" class="form-control" placeholder="il tuo nome e cognome">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="" class="form-label">Telefon0 :</label>
-                                <input type="text" class="form-control" placeholder="il tuo telefono">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="" class="form-label">E-mail :</label>
-                                <input type="email" class="form-control" placeholder="La tua email">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="" class="form-label">Soggetto :</label>
-                                <input type="text" class="form-control" placeholder="Si prega di indicare l'oggetto.">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="" class="form-label">Messaggio :</label>
-                                <textarea name="" rows="5" class="form-control" id=""
-                                    placeholder="Scrivi qui il tuo messaggio"></textarea>
-
-                            </div>
-                            <div class="mb-3">
-                                <button type="submit" class="btn btn-brand">Enviar</button>
-                            </div>
-                        </form>
-
-                    </div>
-                    <!-- FIM LADO DIREITO  -->
-                </div>
-
-            </div>
-            </div>
-        </section>
-        <h4 class="text-center mt-5 mb-3">Nossa Localização</h4>
-        <div class="row justify-content-center pb-5">
-            <div class="col-md12">
-
-                <iframe class=" ratio ratio-16x9 shadow-sm rounded"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.7462295390355!2d-42.519022825577146!3d-19.466505124041557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb00054742fb1ef%3A0xfd0953e611d5d7bd!2sR.%20Quatro%2C%2076%20-%20Planalto%20II%2C%20Ipatinga%20-%20MG%2C%2035164-457!5e0!3m2!1spt-BR!2sbr!4v1770903170250!5m2!1spt-BR!2sbr"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      <!-- Inicio linha 1 -->
+      <div class="row g-4">
+        <!-- Contato Inicio -->
+        <div class="col-12 col-lg-6">
+          <section class="content-box h-100">
+            <h2>Contatti</h2>
+            <ul class="list-unstyled">
+              <li>
+                <strong>📍 Indirizzo:</strong> Via Angelo Bargoni 8, Roma, IT
+              </li>
+              <li><strong>📞 Telefono:</strong> +39 0123 5672716</li>
+              <li><strong>✉️ Email:</strong> info@poggiodelmosto.it</li>
+            </ul>
+          </section>
         </div>
+        <!-- Fim Inicio -->
+        <!-- Inicio area Maps  -->
+
+        <div class="col-12 col-lg-6">
+          <section class="content-box h-100">
+            <h2>Mappa per raggiungere cantina Poggio del Mosto</h2>
+            <div class="map-container">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.616838574506!2d12.465794975234509!3d41.8795895653222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f603b2f0d9841%3A0xa7a11d534edcd11a!2sTalentform!5e0!3m2!1spt-BR!2sit!4v1776760290678!5m2!1spt-BR!2sit"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Fim area Maps  -->
+
+        <!-- Inicio Formulario -->
+        <div class="col-12 mt-4">
+          <section class="content-box">
+            <h2>Form di contatti</h2>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Scrivi nome cognome"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control"  placeholder="Scrivi la tua email."" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Messaggio</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark w-100 w-md-auto px-5">
+                  Invia
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <!-- Fim Formulario -->
+
+        <!-- Fim linha 2 -->
+      </div>
     </main>
 
-    <footer class="pt-5 pb-4 mt-5">
+    <footer class="pt-5 pb-4">
       <div class="container">
         <!-- Prima riga: 4 colonne -->
         <div class="row gy-4">
           <!-- Colonna 1: Logo -->
           <div class="col-md-3">
-            <h3 class="h4 mb-3 fw-bold">Logo</h3>
+            <a href="#" class="logo_desktop"
+            ><img
+              src="./assets/img/ChatGPT_Image_20_apr_2026_21_30_23.webp"
+              alt="logo-poggio del mosto"
+          /></a>
+            
             <p class="small text-white">
               Sua empresa ou marca aqui. Oferecendo os melhores serviços com
               qualidade e confiança.
@@ -172,18 +156,20 @@
             <h5 class="fw-bold mb-3">Contatti & Links</h5>
             <ul class="list-unstyled footer-links">
               <li>
-                <i class="bi bi-geo-alt-fill me-2"></i> Rua Exemplo, 123 - São
-                Paulo/SP
+                <i class="bi bi-geo-alt-fill me-2"></i> Via Angelo Bargoni 8,
+                Roma, IT
               </li>
               <li>
                 <i class="bi bi-envelope-fill me-2"></i>
-                <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+                <a href="mailto: info@poggiodelmosto.it">
+                  info@poggiodelmosto.it</a
+                >
               </li>
               <li>
                 <i class="bi bi-telephone-fill me-2"></i>
-                <a href="tel:+5511999999999">(11) 99999-9999</a>
+                <a href="tel:+39 0123 5672716">+39 0123 5672716</a>
               </li>
-              <li><i class="bi bi-clock-fill me-2"></i> Seg-Sex: 9h às 18h</li>
+              <li><i class="bi bi-clock-fill me-2"></i> Dal lunedì al venerdì: dalle 9:00 alle 18:00</li>
             </ul>
           </div>
           <!-- Colonna 4: Seguici sui social -->
@@ -205,7 +191,7 @@
                   placeholder="Seu e-mail"
                 />
                 <button class="btn btn-outline-light btn-sm" type="button">
-                  Assinar
+                  Per firmare
                 </button>
               </div>
             </div>
@@ -216,25 +202,19 @@
           <div class="col-12 text-center">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Privacy Policy</a
-                >
+                <a href="#" class="small">Privacy Policy</a>
               </li>
               <li class="list-inline-item mx-2 text-secondary">|</li>
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Cookie Policy</a
-                >
+                <a href="#" class="small">Cookie Policy</a>
               </li>
               <li class="list-inline-item mx-2 text-secondary">|</li>
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Termini e condizioni</a
-                >
+                <a href="#" class="small">Termini e condizioni</a>
               </li>
             </ul>
             <p class="small mt-3 mb-0">
-              &copy; 2025 Todos os direitos reservados.
+              &copy; 2025 Tutti i diritti riservati.
             </p>
           </div>
         </div>

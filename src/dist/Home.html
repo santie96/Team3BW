@@ -1,58 +1,70 @@
 <!doctype html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Poggio del mostro: scopri la nostra selezione di vini "
+    />
+    <meta name="author" content="Team3BW" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Poggio del mosto</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-container">
+        <div class="nav_logo">
+          <a href="#" class="logo_desktop"
+            ><img
+              src="./assets/img/ChatGPT_Image_20_apr_2026_21_30_23.webp"
+              alt="logo-poggio del mosto"
+          /></a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="Poggio del mostro: scopri la nostra selezione di vini " />
-  <meta name="author" content="Team3BW" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Poggio del mosto</title>
-</head>
+          <a href="#" class="logo_mobile"
+            ><img
+              src="./ASSETS/img/ChatGPT Image 20 apr 2026, 21_30_23.png"
+              alt="logo-poggio del mosto"
+          /></a>
+        </div>
 
-<body>
-  <header>
-    <div class="container-item-header">
-      <div class="mqMobile">
-        <section class="logo">
-          <a href="./Home.html"><img src="" alt="logo-poggio-del-mosto"></a>
-        </section>
+        <nav role="navigation" class="nav-links">
+          <ul>
+            <li><a href="./catalogo.html">Catalogo</a></li>
+            <li>
+              <a href="./visite_degustazioni.html">Visite e degustazione</a>
+            </li>
+            <li><a href="./Eventi.html">Eventi</a></li>
+            <li><a href="./chi_siamo.html">Chi siamo</a></li>
+            <li><a href="./Contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
 
-        <section class="bars-menu">
+        <div class="nav_mobile_bars">
           <i class="fa-solid fa-bars"></i>
-        </section>
+        </div>
       </div>
-
-      <div class="mqDesktop">
-        <section class="logo">
-          <a href="./Home.html"><img src="" alt="logo-poggio-del-mosto"></a>
-        </section>
-
-          <nav class="nav-link-desktop">
-            <ul>
-              <li><a href="./catalogo.html">Catalogo</a></li>
-              <li><a href="./visite_degustazioni.html">Visite e degustazione</a></li>
-              <li><a href="./Eventi.html">Eventi</a></li>
-              <li><a href="./chi_siamo.html">Chi siamo</a></li>
-              <li><a href="./Contatti.html">Contatti</a></li>
-            </ul>
-          </nav>
-
-      </div>
-    </div>
-  </header>
-
-
-    <footer class="pt-5 pb-4 mt-5">
+    </header>
+  
+   
+    <footer class="pt-5 pb-4">
       <div class="container">
         <!-- Prima riga: 4 colonne -->
         <div class="row gy-4">
           <!-- Colonna 1: Logo -->
           <div class="col-md-3">
-            <h3 class="h4 mb-3 fw-bold">Logo</h3>
+            <a href="#" class="logo_desktop"
+              ><img
+                src="./assets/img/ChatGPT_Image_20_apr_2026_21_30_23.webp"
+                alt="logo-poggio del mosto"
+            /></a>
+
             <p class="small text-white">
               Sua empresa ou marca aqui. Oferecendo os melhores serviços com
               qualidade e confiança.
@@ -72,18 +84,23 @@
             <h5 class="fw-bold mb-3">Contatti & Links</h5>
             <ul class="list-unstyled footer-links">
               <li>
-                <i class="bi bi-geo-alt-fill me-2"></i> Rua Exemplo, 123 - São
-                Paulo/SP
+                <i class="bi bi-geo-alt-fill me-2"></i> Via Angelo Bargoni 8,
+                Roma, IT
               </li>
               <li>
                 <i class="bi bi-envelope-fill me-2"></i>
-                <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+                <a href="mailto: info@poggiodelmosto.it">
+                  info@poggiodelmosto.it</a
+                >
               </li>
               <li>
                 <i class="bi bi-telephone-fill me-2"></i>
-                <a href="tel:+5511999999999">(11) 99999-9999</a>
+                <a href="tel:+39 0123 5672716">+39 0123 5672716</a>
               </li>
-              <li><i class="bi bi-clock-fill me-2"></i> Seg-Sex: 9h às 18h</li>
+              <li>
+                <i class="bi bi-clock-fill me-2"></i> Dal lunedì al venerdì:
+                dalle 9:00 alle 18:00
+              </li>
             </ul>
           </div>
           <!-- Colonna 4: Seguici sui social -->
@@ -105,7 +122,7 @@
                   placeholder="Seu e-mail"
                 />
                 <button class="btn btn-outline-light btn-sm" type="button">
-                  Assinar
+                  Per firmare
                 </button>
               </div>
             </div>
@@ -116,31 +133,23 @@
           <div class="col-12 text-center">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Privacy Policy</a
-                >
+                <a href="#" class="small">Privacy Policy</a>
               </li>
               <li class="list-inline-item mx-2 text-secondary">|</li>
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Cookie Policy</a
-                >
+                <a href="#" class="small">Cookie Policy</a>
               </li>
               <li class="list-inline-item mx-2 text-secondary">|</li>
               <li class="list-inline-item">
-                <a href="#" class="small"
-                  >Termini e condizioni</a
-                >
+                <a href="#" class="small">Termini e condizioni</a>
               </li>
             </ul>
             <p class="small mt-3 mb-0">
-              &copy; 2025 Todos os direitos reservados.
+              &copy; 2025 Tutti i diritti riservati.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+   </body>
 </html>
