@@ -1,4 +1,9 @@
-:root { /* <--- Due punti, non il punto! */
---font-title: "Prata", serif;
---font-main: "Lato", sans-serif;
+:root {
+  /* <--- Due punti, non il punto! */
+  --font-title: "Prata", serif;
+  --font-main: 'Playfair Display', serif;
+  --color-secondary: #d4af37;
+  --color-third: #1a1a1a;
+  --color-bg-dark: #0f0f0f;
+  --color-bg-light-dark: #212529;
 }
