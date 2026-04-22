@@ -76,11 +76,16 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  width: 100%;
+  background-color: black;
 }
 
-.logo {
+.nav-logo {
   display: flex;
-  flex-basis: 50%;
+  justify-content: flex-start;
+  flex-basis: 10%;
 }
 
 .logo img {
