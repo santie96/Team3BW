@@ -12720,6 +12720,11 @@ footer h5 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+footer .small {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
 footer .footer-links a {
   color: #f0f0f0 !important;
   text-decoration: none;
@@ -12743,7 +12748,7 @@ footer .social-icons a {
   text-decoration: none;
 }
 footer .social-icons a:hover {
-  color: #d4af37 !important;
+  color: #d4af37;
   transform: translateY(-3px);
 }
 footer .input-group .form-control {
@@ -12763,7 +12768,7 @@ footer .input-group .form-control:focus {
   background-color: #1a1a1a;
   border-color: #d4af37;
   color: #f0f0f0;
-  box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.12);
+  box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.218);
 }
 footer .input-group .btn-outline-warning {
   border-color: rgba(212, 175, 55, 0.5);
@@ -12775,7 +12780,7 @@ footer .input-group .btn-outline-warning {
 footer .input-group .btn-outline-warning:hover {
   background-color: #d4af37;
   border-color: #d4af37;
-  color: #f0f0f0;
+  color: #ffffff;
 }
 footer .list-inline-item a {
   color: #f0f0f0;
@@ -12786,6 +12791,16 @@ footer .list-inline-item a {
 }
 footer .list-inline-item a:hover {
   color: #d4af37 !important;
+}
+
+.logo-footer {
+  width: 175px;
+}
+
+.logo-footer:hover {
+  transform: translateY(-3px);
+  transition: transform 0.25s ease;
+  filter: grayscale(0.25);
 }
 
 /*# sourceMappingURL=style.css.map */

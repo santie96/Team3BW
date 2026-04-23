@@ -1,324 +1,422 @@
 <!doctype html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catalogo</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-md stycky-top">
+      <div class="container-fluid px-4">
+        <a href="./home.html" class="navbar-brand">
+          <img src="./assets/img/logo_navbar.png" alt="Logo Poggio del Mosto" />
+        </a>
 
-<body>
-  <nav class="navbar navbar-expand-md stycky-top">
-    <div class="container-fluid px-4">
-      <a href="./home.html" class="navbar-brand">
-        <img src="./assets/img/logo.png" alt="Logo Poggio del Mosto" />
-      </a>
-
-      <!-- Hamburger button-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-        aria-controls="navbarMain" aria-expanded="false" aria-label="Apri navigazione">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
-          <li class="nav-item">
-            <a href="./catalogo.html" class="nav-link">Catalogo</a>
-          </li>
-          <li class="nav-item">
-            <a href="./degustazioni.html" class="nav-link">Degustazioni</a>
-          </li>
-          <li class="nav-item">
-            <a href="./eventi.html" class="nav-link">Eventi</a>
-          </li>
-          <li class="nav-item">
-            <a href="./chi_siamo.html" class="nav-link">Chi siamo</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contatti.html" class="nav-link">Contatti</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <h1>I nostri vini</h1>
-    <section class="catalogo">
-      <div class="container-items-catalogo">
-        <article class="article-s">
-          <div class="intestazione-card-s">
-            <div class="intestazione-title-card-s">
-              <h2 id="titulo">Il Superiore</h2>
-              <span>300€</span>
-            </div>
-            <p id="pesp" class="p-card-s">
-              Un rosso imponente e strutturato, nato dalle vigne più antiche.
-              Note di frutti rossi maturi si intrecciano a sentori di vaniglia
-              e tabacco, offrendo un sorso lungo, vellutato e di estrema
-              nobiltà.
-            </p>
-          </div>
-          <div class="container-img-s">
-            <img id="imagem" src="./assets/img/vino-poggio-del-mosto-scuro1.png" alt="visite e degustazioni" />
-          </div>
-          <div class="container-btn-s">
-            <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-              Clicca per acquistare
-            </button>
-          </div>
-        </article>
-
-        <article class="article-s">
-          <div class="intestazione-card-s">
-            <div class="intestazione-title-card-s">
-              <h2 id="titulo">Il Masnadiero</h2>
-              <span>250€</span>
-            </div>
-            <p id="pesp" class="p-card-s">
-              Audace e ribelle, questo vino colpisce per la sua intensità
-              speziata e i richiami al sottobosco. Un corpo robusto e un
-              tannino deciso lo rendono il compagno ideale per chi ama i
-              sapori forti e senza compromessi.
-            </p>
-          </div>
-          <div class="container-img-s">
-            <img id="imagem" src="./assets/img/vino_rosso_il_masnadiero.png" alt="visite e degustazioni" />
-          </div>
-          <div class="container-btn-s">
-            <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-              Clicca per acquistare
-            </button>
-          </div>
-        </article>
-        <article class="article-s">
-          <div class="intestazione-card-s">
-            <div class="intestazione-title-card-s">
-            <h2 id="titulo">L'Inganno</h2>
-            <span>200€</span>
-          </div>
-          <p id="pesp" class="p-card-s">
-            Un vino che sorprende per la sua complessità nascosta.
-            All’apparenza delicato, rivela al palato una struttura complessa
-            di marasca e pepe nero, lasciando un finale persistente che
-            invita a un secondo calice.
-          </p>
-      </div>
-      <div class="container-img-s">
-        <img id="imagem" src="./assets/img/vino_rosso_linganno.png" alt="visite e degustazioni" />
-      </div>
-      <div class="container-btn-s">
-        <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-          Clicca per acquistare
+        <!-- Hamburger button-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Apri navigazione"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      </article>
-      <article class="article-s">
-        <div class="intestazione-card-s">
-          <div class="intestazione-title-card-s">
-            <h2 id="titulo">La Monella</h2>
-            <span>160€</span>
-          </div>
-          <p id="pesp" class="p-card-s">
-            Fresca, vivace e leggermente impertinente. Questo bianco
-            sprigiona aromi floreali e di agrumi, con una spiccata acidità
-            che pulisce il palato e regala una sensazione di immediata
-            spensieratezza estiva.
-          </p>
-        </div>
-        <div class="container-img-s">
-          <img id="imagem" src="./assets/img/vino_bianco_la_monella.png" alt="visite e degustazioni" />
-        </div>
-        <div class="container-btn">
-          <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-            Clicca per acquistare
-          </button>
-        </div>
-      </article>
-      <article class="article-s">
-        <div class="intestazione-card-s">
-          <div class="intestazione-title-card-s">
-            <h2 id="titulo">L'Innocente</h2>
-            <span>140€</span>
-          </div>
-          <p id="pesp" class="p-card-s">
-            La purezza nel calice. Un vino bianco cristallino,
-            caratterizzato da note minerali e di frutta a polpa bianca.
-            Elegante nella sua semplicità, è l’espressione più sincera e
-            delicata del nostro territorio.
-          </p>
-        </div>
-        <div class="container-img-s">
-          <img id="imagem" src="./assets/img/vino_bianco_linnocente.png" alt="visite e degustazioni" />
-        </div>
-        <div class="container-btn">
-          <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-            Clicca per acquistare
-          </button>
-        </div>
-      </article>
-      <article class="article-s">
-        <div class="intestazione-card-s">
-          <div class="intestazione-title-card-s">
-            <h2 id="titulo">Il Furfante</h2>
-            <span>170€</span>
-          </div>
-          <p id="pesp" class="p-card-s">
-            Un violato (nostra invenzione) intrigante e giocoso, che punta
-            tutto sulla piacevolezza. Sentori di fragolina selvatica e
-            lampone si fondono in un sorso fresco e beverino, perfetto per
-            aperitivi che durano fino al tramonto.
-          </p>
-        </div>
-        <div class="container-img-s">
-          <img id="imagem" src="./assets/img/vino_viola_il_furfante.png" alt="visite e degustazioni" />
-        </div>
-        <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
-          Clicca per acquistare
-        </button>
-        </div>
-      </article>
-      </div>
-    </section>
-  </main>
 
-  <footer class="pt-5 pb-4">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-md-3">
-          <a href="./home.html">
-            <img src="./assets/img/logo.png" alt="Logo" style="height: 55px" />
-          </a>
-          <p class="small text-white-50">
-            Vini artigianali dall'anima del territorio, pensati per chi cerca
-            emozioni oltre il calice.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">Contatti &amp; Links</h5>
-          <ul class="list-unstyled footer-links">
-            <li class="mb-2">
-              <i class="bi bi-geo-alt-fill me-2"></i>
-              Via Angelo Bargoni 8, Roma, IT
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+            <li class="nav-item">
+              <a href="./catalogo.html" class="nav-link">Catalogo</a>
             </li>
-            <li class="mb-2">
-              <i class="bi bi-envelope-fill me-2"></i>
-              <a href="">info@poggiodelmosto.it</a>
+            <li class="nav-item">
+              <a href="./degustazioni.html" class="nav-link">Degustazioni</a>
             </li>
-            <li class="mb-2">
-              <i class="bi bi-telephone-fill me-2"></i>
-              <a href="">+39 0123 56789</a>
+            <li class="nav-item">
+              <a href="./eventi.html" class="nav-link">Eventi</a>
             </li>
-            <li class="mb-2">
-              <i class=""></i>
-              Lun-Ven: 9:00 - 18:00
+            <li class="nav-item">
+              <a href="./chi_siamo.html" class="nav-link">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contatti.html" class="nav-link">Contatti</a>
             </li>
           </ul>
         </div>
-
-        <div class="col-md-3">
-          <h5 class="fw-bold mb-3">Seguici</h5>
-          <div class="social-icons mb-3">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-youtube"></i></a>
-          </div>
-          <p class="mb-1 small">Newsletter</p>
-          <div class="input-group input-group-sm">
-            <input type="email" class="form-control bg-dark text-whnite border-secondary" placeholder="La tua email" />
-            <button class="btn btn-outline-warning btn-sm" type="button">
-              Iscriviti
-            </button>
-          </div>
-        </div>
       </div>
+    </nav>
 
-      <div class="row border-top border-secondary pt-4 mt-4">
-        <div class="col-12 text-center">
-          <ul class="list-inline mb-0 small">
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            <li class="list-inline-item mx-2 text-secondary">
-              <a href="#">Cookie Policy</a>
-            </li>
-            <li class="list-inline-item mx-2 text-secondary">
-              <a href="#">Termini e Condizioni</a>
-            </li>
-          </ul>
-          <p class="small mt-3 mb-0 text-white-50">
-            &copy; 2026 - Poggio del Mosto - Tutti i diritti riservati.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- INICIO MODAL -->
-
-  <div class="modal fade" id="modalExperiencia" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content custom-experience-modal">
-        <div class="modal-body p-4">
-          <div class="row g-3 mb-3">
-            <div class="col-12 col-md-5">
-              <div class="img-placeholder d-flex align-items-center justify-content-center">
-                <img id="modal-img-destino" src="" style="width: 100%; border-radius: 8px" />
+    <main>
+      <h1>I nostri vini</h1>
+      <section class="catalogo">
+        <div class="container-items-catalogo">
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">Il Superiore</h2>
+                <span>300€</span>
               </div>
+              <p id="pesp" class="p-card-s">
+                Un rosso imponente e strutturato, nato dalle vigne più antiche.
+                Note di frutti rossi maturi si intrecciano a sentori di vaniglia
+                e tabacco, offrendo un sorso lungo, vellutato e di estrema
+                nobiltà.
+              </p>
             </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino-poggio-del-mosto-scuro1.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
 
-            <div class="col-12 col-md-7 d-flex flex-column gap-2">
-              <h2 id="modal-titulo-destino">Nome esperienza</h2>
-              <hr class="custom-divider" />
-              <div class="col-12">
-                <div class="description-box">
-                  <p id="modal-lip-destino">****</p>
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">Il Masnadiero</h2>
+                <span>250€</span>
+              </div>
+              <p id="pesp" class="p-card-s">
+                Audace e ribelle, questo vino colpisce per la sua intensità
+                speziata e i richiami al sottobosco. Un corpo robusto e un
+                tannino deciso lo rendono il compagno ideale per chi ama i
+                sapori forti e senza compromessi.
+              </p>
+            </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino_rosso_il_masnadiero.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
+
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">L'Inganno</h2>
+                <span>200€</span>
+              </div>
+              <p id="pesp" class="p-card-s">
+                Un vino che sorprende per la sua complessità nascosta.
+                All’apparenza delicato, rivela al palato una struttura complessa
+                di marasca e pepe nero, lasciando un finale persistente che
+                invita a un secondo calice.
+              </p>
+            </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino_rosso_linganno.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">La Monella</h2>
+                <span>160€</span>
+              </div>
+              <p id="pesp" class="p-card-s">
+                Fresca, vivace e leggermente impertinente. Questo bianco
+                sprigiona aromi floreali e di agrumi, con una spiccata acidità
+                che pulisce il palato e regala una sensazione di immediata
+                spensieratezza estiva.
+              </p>
+            </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino_bianco_la_monella.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">L'Innocente</h2>
+                <span>140€</span>
+              </div>
+              <p id="pesp" class="p-card-s">
+                La purezza nel calice. Un vino bianco cristallino,
+                caratterizzato da note minerali e di frutta a polpa bianca.
+                Elegante nella sua semplicità, è l’espressione più sincera e
+                delicata del nostro territorio.
+              </p>
+            </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino_bianco_linnocente.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
+          <article class="article-s">
+            <div class="intestazione-card-s">
+              <div class="intestazione-title-card-s">
+                <h2 id="titulo">Il Furfante</h2>
+                <span>170€</span>
+              </div>
+              <p id="pesp" class="p-card-s">
+                Un violato (nostra invenzione) intrigante e giocoso, che punta
+                tutto sulla piacevolezza. Sentori di fragolina selvatica e
+                lampone si fondono in un sorso fresco e beverino, perfetto per
+                aperitivi che durano fino al tramonto.
+              </p>
+            </div>
+            <div class="container-img-s">
+              <img
+                id="imagem"
+                src="./assets/img/vino_viola_il_furfante.png"
+                alt="visite e degustazioni"
+              />
+            </div>
+            <div class="container-btn-s">
+              <button
+                type="submit"
+                class="btn-add-carrello"
+                onclick="abrirModalVinho(this)"
+              >
+                Clicca per acquistare
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div
+            class="col-md-4 d-flex flex-column align-items-center text-center"
+          >
+            <a href="./home.html">
+              <img class="logo-footer" src="./assets/img/logo_footer.png" alt="Logo" />
+            </a>
+            <p class="small">
+              Vini artigianali dall'anima del territorio, pensati per chi cerca
+              emozioni oltre il calice.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Contatti &amp; Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Via Angelo Bargoni 8, Roma, IT
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <a href="">info@poggiodelmosto.it</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                <a href="">+39 0123 56789</a>
+              </li>
+              <li class="mb-2">
+                <i class=""></i>
+                Lun-Ven: 9:00 - 18:00
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Seguici</h5>
+            <div class="social-icons mb-3">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <p class="mb-1 small">Newsletter</p>
+            <div class="input-group input-group-sm">
+              <input
+                type="email"
+                class="form-control bg-dark text-whnite border-secondary"
+                placeholder="La tua email"
+              />
+              <button class="btn btn-outline-warning btn-sm" type="button">
+                Iscriviti
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row border-top border-secondary pt-4 mt-4">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-0 small">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item mx-2 text-secondary">
+                <a href="#">Cookie Policy</a>
+              </li>
+              <li class="list-inline-item mx-2 text-secondary">
+                <a href="#">Termini e Condizioni</a>
+              </li>
+            </ul>
+            <p class="small mt-3 mb-0 text-white-50">
+              &copy; 2026 - Poggio del Mosto - Tutti i diritti riservati.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- INICIO MODAL -->
+
+    <div
+      class="modal fade"
+      id="modalExperiencia"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-experience-modal">
+          <div class="modal-body p-4">
+            <div class="row g-3 mb-3">
+              <div class="col-12 col-md-5">
+                <div
+                  class="img-placeholder d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    id="modal-img-destino"
+                    src=""
+                    style="width: 100%; border-radius: 8px"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-7 d-flex flex-column gap-2">
+                <h2 id="modal-titulo-destino">Nome esperienza</h2>
+                <hr class="custom-divider" />
+                <div class="col-12">
+                  <div class="description-box">
+                    <p id="modal-lip-destino">****</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <form id="form-contato-vinho">
-            <div class="row g-2 mb-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Seu Nome" required />
+            <form id="form-contato-vinho">
+              <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Seu Nome"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Seu E-mail"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control"
+                    placeholder="Sua Mensagem"
+                  ></textarea>
+                </div>
               </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Seu E-mail" required />
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" placeholder="Sua Mensagem"></textarea>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                  <button type="button" class="btn btn-outline-secondary" onclick="decrementar()">
-                    <i class="bi bi-dash-circle"></i>
-                  </button>
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      onclick="decrementar()"
+                    >
+                      <i class="bi bi-dash-circle"></i>
+                    </button>
 
-                  <span id="contador-qtd" class="fs-5">1</span>
+                    <span id="contador-qtd" class="fs-5">1</span>
 
-                  <button type="button" class="btn btn-outline-secondary" onclick="incrementar()">
-                    <i class="bi bi-plus-circle"></i>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      onclick="incrementar()"
+                    >
+                      <i class="bi bi-plus-circle"></i>
+                    </button>
+                  </div>
+
+                  <button type="submit" class="btn btn-success w-100 mt-2">
+                    Finalizar Pedido
                   </button>
                 </div>
-
-                <button type="submit" class="btn btn-success w-100 mt-2">
-                  Finalizar Pedido
-                </button>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- FIM MODAL -->
-  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./ASSETS/js/script.js"></script>
-</body>
-
+    <!-- FIM MODAL -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./ASSETS/js/script.js"></script>
+  </body>
 </html>

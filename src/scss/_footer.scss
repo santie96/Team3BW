@@ -15,6 +15,12 @@ footer{
         text-transform: uppercase;
     }
 
+    .small{
+        color: var(--text-color);
+        font-size: 0.85rem;
+        letter-spacing: 0.3px;
+    }
+
     .footer-links{
 
         a{
@@ -44,7 +50,7 @@ footer{
             text-decoration: none;
 
             &:hover{
-                color: #d4af37!important;
+                color: #d4af37;
                 transform: translateY(-3px);
             }
         }
@@ -70,7 +76,7 @@ footer{
                 background-color: #1a1a1a;
                 border-color: #d4af37;
                 color: #f0f0f0;
-                box-shadow: 0 0 0 0.2rem rgba(212,175,55, 0.12);
+                box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.218);
             }
 
            
@@ -87,7 +93,7 @@ footer{
             &:hover{
                 background-color: #d4af37;
                 border-color: #d4af37;
-                color: #f0f0f0;
+                color: #ffffff;
             }
         }
     }
@@ -103,4 +109,14 @@ footer{
             color: #d4af37!important;
         }
     }
+}
+
+.logo-footer{
+    width: 175px;
+}
+
+.logo-footer:hover{
+    transform: translateY(-3px);
+    transition: transform 0.25s ease;
+    filter: grayscale(0.25);
 }
