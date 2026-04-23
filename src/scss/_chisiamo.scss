@@ -1,6 +1,5 @@
-p {
-  color: var(--color-text);
-}
+@use "color-fonts" as *;
+
 
 .font-serif {
   font-family: "Playfair Display", serif;

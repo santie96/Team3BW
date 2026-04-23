@@ -11869,7 +11869,7 @@ textarea.form-control-lg {
   --color-bg-dark: #0f0f0f;
   --color-bg-light-dark: #212529;
   --color-card-bg: #1a1a1a;
-  --color-text: #f0f0f0;
+  --color-text: rgb(240, 240, 240);
   --color-text-muted: rgba(240, 240, 240, 0.65);
 }
 
@@ -12784,6 +12784,80 @@ footer .list-inline-item a {
 }
 footer .list-inline-item a:hover {
   color: #d4af37 !important;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.gold-text {
+  color: var(--color-secondary);
+}
+
+.colo-text {
+  color: var(--color-text);
+}
+
+/* Animations */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-out;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease-out;
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.divider-gold {
+  width: 80px;
+  height: 1px;
+  background-color: var(--color-secondary);
+  margin: 2rem auto;
+}
+
+.img-container {
+  overflow: hidden;
+  border: 1px solid #1a1a1a;
+}
+
+.img-container img {
+  transition: transform 1.5s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+.bg-dark-accent {
+  background-color: #0a0a0a;
+}
+
+.reveal-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-element.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
