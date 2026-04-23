@@ -66,17 +66,19 @@
           <div class="cnt-col-deg mg0">
             <div class="card-deg">
               <div class="cnt-intestation-card-deg">
-                <h2 class="mg0">Degustazione Riserva</h2>
+                <!-- <h2 id="titulo" class="mg0">Degustazione Riserva</h2> -->
+                <h2 class="mg0"> Degustazione Riserva</h2>
                 <span class="mg0">120€</span>
               </div>
               <div class="cnt-img-card-deg">
-                <img
+                <img src="./assets/img/deg_riserva.webp" alt="..."/>
+               <!-- <img id="imagem"
                   src="./assets/img/deg_riserva.webp"
                   alt="img-degustation-classica"
-                />
-              </div>
+                />-->
+              </div> 
               <div class="cnt-description-card-deg">
-                <p class="mg0">
+               <p class="mg0">
                   Un’esperienza esclusiva dedicata alle nostre etichette più
                   pregiate. Un viaggio tra vini di grande struttura ed eleganza,
                   espressione del tempo e della cura ad ogni bottiglia.
@@ -105,23 +107,26 @@
                 </div>
               </div>
               <div class="cnt-button-card-deg">
-                <button type="button">Prenota degustazione</button>
+                <!-- <button type="button">Prenota degustazione</button> -->
+                <button type="submit" class="btn-add-carrello" onclick="apriModalVinho()">
+              Prenota degustazione
+            </button>
               </div>
             </div>
 
             <div class="card-deg">
               <div class="cnt-intestation-card-deg">
-                <h2 class="mg0">Degustazione Experience</h2>
+                <h2 class="mg0"id="titulo" class="mg0">Degustazione Experience</h2>
                 <span class="mg0">100€</span>
               </div>
               <div class="cnt-img-card-deg">
-                <img
+               <img 
                   src="./assets/img/deg_experience.webp"
                   alt="img-degustation-premium"
                 />
               </div>
               <div class="cnt-description-card-deg">
-                <p class="mg0">
+               <p class="mg0">
                   Un’esperienza immersiva che parte dalla vigna e arriva al
                   calice. Una passeggiata tra i filari per conoscere da vicino
                   il ciclo della vite, seguita da una degustazione dei vini
@@ -152,7 +157,9 @@
                 </div>
               </div>
               <div class="cnt-button-card-deg">
-                <button type="button">Prenota degustazione</button>
+                <button type="submit" class="btn-add-carrello" onclick="apriModalVinho()">
+              Prenota degustazione
+            </button>
               </div>
             </div>
           </div>
@@ -164,19 +171,19 @@
                 <span class="mg0">70€</span>
               </div>
               <div class="cnt-img-card-deg">
-                <img
+               <img 
                   src="./assets/img/deg_premium.webp"
                   alt="img-degustation-riserva"
                 />
               </div>
               <div class="cnt-description-card-deg">
-                <p class="mg0">
+               <p class="mg0">
                   Un’esperienza più strutturata per chi desidera approfondire il
                   mondo del vino. Un percorso sensoriale tra etichette di
                   maggiore complessità, guidato alla scoperta di aromi,
                   equilibrio e carattere.
                 </p>
-                <div>
+                <div class="cnt-text-card-deg">
                   <h3 class="mg0">Cosa comprende:</h3>
                   <ul>
                     <li>
@@ -201,23 +208,25 @@
                 </div>
               </div>
               <div class="cnt-button-card-deg">
-                <button type="button">Prenota degustazione</button>
+                <button type="submit" class="btn-add-carrello" onclick="apriModalVinho()">
+              Prenota degustazione
+            </button>
               </div>
             </div>
 
             <div class="card-deg">
               <div class="cnt-intestation-card-deg">
-                <h2 class="mg0">Degustazione Classica</h2>
+                <h2 id="titulo" id="titulo" class="mg0">Degustazione Classica</h2>
                 <span class="mg0">50€</span>
               </div>
               <div class="cnt-img-card-deg">
-                <img
+               <img id="imagem"
                   src="./assets/img/deg_classica.webp"
                   alt="img-wine-experience-vigna"
                 />
               </div>
               <div class="cnt-description-card-deg">
-                <p class="mg0">
+               <p id="titulo" class="mg0">
                   Un percorso introduttivo pensato per scoprire l’anima della
                   cantina. Attraverso una selezione dei nostri vini più
                   rappresentativi, questa esperienza racconta il territorio, le
@@ -245,9 +254,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="cnt-button-card-deg">
-                <button type="button">Prenota degustazione</button>
-              </div>
+               <button type="submit" class="btn-add-carrello" onclick="abrirModalVinho(this)">
+              Prenota degustazione
+            </button>
             </div>
           </div>
         </div>
@@ -265,7 +274,7 @@
                 style="height: 55px"
               />
             </a>
-            <p class="small text-white-50">
+           <h2 id="titulo" class="small text-white-50">
               Vini artigianali dall'anima del territorio, pensati per chi cerca
               emozioni oltre il calice.
             </p>
@@ -331,8 +340,68 @@
         </div>
       </div>
     </footer>
+  <!-- INICIO MODAL -->
 
+    <div class="modal fade" id="modalAcquistoVino" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-experience-modal">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body p-4">
+            <div class="row g-3 mb-3">
+              <div class="col-12 col-md-5">
+                <div class="img-placeholder d-flex align-items-center justify-content-center">
+                  <img id="modal-img-destino" src="" style="width: 100%; border-radius: 12px; object-fit: cover;" />
+                                  
+                </div>
+              </div>
+              <div class="col-12 col-md-7 d-flex flex-column gap-2">
+                <h2 id="modal-titulo-destino" class="fw-bold">Nome vino</h2>
+                <hr class="border-warning border-2 opacity-100">
+                <div class="col-12">
+                  <div class="description-box">
+                    <p id="modal-lip-destino" class="mb-0">Descrizione del vino selezionato</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form id="form-ordine-vino">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="nomeCliente" placeholder="Il tuo nome" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" id="emailCliente" placeholder="La tua email" required />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" id="messaggioCliente" placeholder="Eventuali note o messaggio (opzionale)" rows="2"></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+                    <button type="button" class="btn btn-outline-secondary" id="btn-decrementa">
+                      <i class="bi bi-dash-circle fs-5"></i>
+                    </button>
+                    <span id="contador-qtd" class="fs-4 fw-semibold">1</span>
+                    <button type="button" class="btn btn-outline-secondary" id="btn-incrementa">
+                      <i class="bi bi-plus-circle fs-5"></i>
+                    </button>
+                  </div>
+                  <button type="submit" class="btn btn-success w-100 mt-1">
+                    </i>Finalizzare l'ordine
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- FIM MODAL -->
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./ASSETS/js/script-degust.js"></script>
   </body>
 </html>
