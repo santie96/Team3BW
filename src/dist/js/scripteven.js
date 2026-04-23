@@ -65,7 +65,7 @@ const even = [
 ];
 
 const evenContenitore = document.querySelector("#cnt-even");
-let qntevt = 1;
+let qnte = 1;
 
 even.forEach((e) => {
   evenContenitore.innerHTML += `
@@ -107,4 +107,21 @@ evenContenitore.addEventListener("click", (e) => {
   bootstrap.Modal.getOrCreateInstance(
     document.querySelector("#modalAcquistoeven"),
   ).show();
+});
+document
+  .querySelector("#modalAcquistoeven")
+  .addEventListener("show.bs.modal", () => {
+    document.querySelector("#contador-e").textContent = 1;
+  });
+
+document.querySelector("#btn-incrementa-e").addEventListener("click", () => {
+  qnte++;
+  document.querySelector("#contador-e").textContent = qnte;
+});
+
+document.querySelector("#btn-decrementa-e").addEventListener("click", () => {
+  if (qnte > 1) {
+    qnte--;
+    document.querySelector("#contador-e").textContent = qnte;
+  }
 });
