@@ -73,8 +73,6 @@
   if (btnIncrementa) btnIncrementa.addEventListener("click", incrementa);
   if (btnDecrementa) btnDecrementa.addEventListener("click", decrementa);
 
-  
-
   // Collega i bottoni "Clicca per acquistare" di ogni card
   const pulsantiAcquista = document.querySelectorAll(".btn-acquista");
   pulsantiAcquista.forEach((pulsante, idx) => {
@@ -102,8 +100,6 @@
       apriModalVino(vinoObj);
     });
   });
-
- 
 
   // Se ci sono id duplicati? Nessun problema — ora è robusto.
   console.log("Catalogo vini inizializzato correttamente");
