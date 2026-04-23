@@ -1,25 +1,25 @@
-$color-bg-dark:       #0f0f0f;
+$color-bg-dark: #0f0f0f;
 $color-bg-light-dark: #212529;
-$color-card-bg:       #1a1a1a;
-$color-secondary:     #d4af37;
-$color-text:          #f0f0f0;
-$color-text-muted:    rgba(240, 240, 240, 0.65);
- 
+$color-card-bg: #1a1a1a;
+$color-secondary: #d4af37;
+$color-text: #f0f0f0;
+$color-text-muted: rgba(240, 240, 240, 0.65);
+
 $font-title: "Prata", serif;
-$font-main:  "Playfair Display", serif;
+$font-main: "Playfair Display", serif;
 
 :root {
-  --font-title:          #{$font-title};
-  --font-main:           #{$font-main};
-  --font-titles:         #{$font-title};
- 
-  --color-secondary:     #{$color-secondary};
-  --color-third:         #{$color-card-bg};
-  --color-bg-dark:       #{$color-bg-dark};
+  --font-title: #{$font-title};
+  --font-main: #{$font-main};
+  --font-titles: #{$font-title};
+
+  --color-secondary: #{$color-secondary};
+  --color-third: #{$color-card-bg};
+  --color-bg-dark: #{$color-bg-dark};
   --color-bg-light-dark: #{$color-bg-light-dark};
-  --color-card-bg:       #{$color-card-bg};
-  --color-text:          #{$color-text};
-  --color-text-muted:    #{$color-text-muted};
+  --color-card-bg: #{$color-card-bg};
+  --color-text: #{$color-text};
+  --color-text-muted: #{$color-text-muted};
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
