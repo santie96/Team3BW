@@ -12336,7 +12336,6 @@ main h1 {
   border: 1px solid rgba(232, 232, 232, 0.15);
   color: var(--color-text);
   gap: 20px;
-  cursor: pointer;
   margin: 0;
   box-sizing: border-box;
 }
@@ -12586,7 +12585,6 @@ textarea {
 .article-e:hover {
   border: 1px solid var(--color-secondary);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
 }
 
 .article-e a {
