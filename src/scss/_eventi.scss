@@ -1,11 +1,11 @@
-.catalogo {
+.eventi {
   background-color: var(--color-bg-dark);
   padding: 100px 20px;
   display: flex;
   justify-content: center;
 }
 
-.container-items-catalogo {
+.container-items-eventi {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 50px;
@@ -13,7 +13,7 @@
   max-width: 1200px;
 }
 
-.article-s {
+.article-e {
   display: flex;
   flex-direction: column;
   background-color: var(--color-card-bg);
@@ -26,52 +26,55 @@
   transition: border 0.3s ease;
 }
 
-.article-s:hover {
+.article-e:hover {
   border: 1px solid var(--color-secondary);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
-.article-s a {
+.article-e a {
   text-decoration: none;
   font-family: var(--font-main);
 }
 
-.intestazione-card-s h2 {
+
+.intestazione-card-e h2 {
   color: var(--color-secondary);
   font-family: var(--font-titles);
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
   margin: 0;
+  text-align: left;
 }
 
-.intestazione-title-card-s {
+.intestazione-title-card-e {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.intestazione-title-card-s span {
+.intestazione-title-card-e span {
   font-family: var(--font-titles);
   color: var(--color-text);
   font-size: 1.5rem;
 }
 
-.p-card-s {
+.p-card-e {
   color: #d1d1d1;
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 30px;
 }
 
-.container-img-s {
+.container-img-e {
   width: 100%;
   margin-top: auto;
   overflow: hidden;
 }
 
-.container-img-s img {
+.container-img-e img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -80,11 +83,11 @@
   border-radius: 2px;
 }
 
-.article-s:hover .container-img-s img {
+.article-e:hover .container-img-e img {
   filter: grayscale(0%);
 }
 
-.container-btn-s {
+.container-btn-e {
   margin-top: 30px;
 }
 
@@ -92,7 +95,7 @@
   padding: 15px 30px;
   border-radius: 5px;
   font-family: var(--font-title);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background-color: var(--color-secondary);
   transition:
     background-color,
@@ -109,6 +112,7 @@ p {
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 30px;
+  font-family: var(--font-main);
 }
 
 h2 {
@@ -117,6 +121,7 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  
 }
 h3 {
   color: var(--color-text);
@@ -142,8 +147,7 @@ h3 {
   }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 320px) {
   .img-placeholder {
     width: 100%;
     height: auto;
