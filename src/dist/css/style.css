@@ -12229,6 +12229,18 @@ main {
   transform: scale(1.05);
 }
 
+main {
+  width: 100%;
+}
+
+main h1 {
+  font-family: var(--font-titles);
+  color: var(--color-secondary);
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
 .deg {
   background-color: var(--color-bg-dark);
   display: flex;
@@ -12261,13 +12273,14 @@ main {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  max-height: 600px;
+  max-height: 700px;
   padding: 30px;
   border: 1px solid rgba(232, 232, 232, 0.15);
   color: var(--color-text);
   gap: 20px;
   cursor: pointer;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .card-deg:hover .cnt-img-card-deg img {
@@ -12302,6 +12315,12 @@ main {
   font-size: 1.5rem;
 }
 
+.cnt-description-card-deg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .cnt-description-card-deg p {
   font-family: var(--font-main);
   color: var(--color-text);
@@ -12314,6 +12333,18 @@ main {
   font-size: 1.3rem;
 }
 
+.cnt-text-card-deg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cnt-text-card-deg ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .cnt-img-card-deg {
   display: flex;
   width: 100%;
@@ -12324,10 +12355,13 @@ main {
 
 .cnt-img-card-deg img {
   width: 100%;
+  min-height: 200px;
+  height: auto;
   object-fit: cover;
   filter: grayscale(30%);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 2px;
+  display: block;
 }
 
 .cnt-button-card-deg button {
