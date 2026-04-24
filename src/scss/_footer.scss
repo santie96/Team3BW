@@ -1,106 +1,108 @@
 /* FOOTER CUSTOM CSS */
 
-footer{
-    background-color: #0f0f0f;
-    border-top: 1px solid rgba(212,175,55, 0.2);
-    color: #f0f0f0;
-    font-family: "Playfair Display" , serif;
+footer {
+  background-color: #0f0f0f;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  color: #f0f0f0;
+  font-family: "Playfair Display", serif;
 
+  h5 {
+    color: #d4af37;
+    font-family: "Prata", serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
 
-    h5{
-        color: #d4af37;
-        font-family: "Prata", serif;
-        font-size: 0.9rem;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
+.footer-logo{
+    height: auto!important;
+    width: 150px!important;
+}
+
+  .footer-links {
+    a {
+      color: #f0f0f0 !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #d4af37 !important;
+      }
     }
 
-    .footer-links{
-
-        a{
-            color: #f0f0f0!important;
-            text-decoration: none;
-            transition: color 0.2s ease;
-
-            &:hover{
-                color: #d4af37!important;
-            }
-        }
-
-        i{
-            color: #d4af37;
-            font-size: 1rem;
-        }
+    i {
+      color: #d4af37;
+      font-size: 1rem;
     }
+  }
 
-    .social-icons{
-        display: flex;
-        gap: 0.85rem;
+  .social-icons {
+    display: flex;
+    gap: 0.85rem;
 
-        a {
-            color: #f0f0f0;
-            font-size: 1.25rem;
-            transition: color 0.25s ease, transform 0.25 ease;
-            text-decoration: none;
+    a {
+      color: #f0f0f0;
+      font-size: 1.25rem;
+      transition:
+        color 0.25s ease,
+        transform 0.25 ease;
+      text-decoration: none;
 
-            &:hover{
-                color: #d4af37!important;
-                transform: translateY(-3px);
-            }
-        }
+      &:hover {
+        color: #d4af37 !important;
+        transform: translateY(-3px);
+      }
     }
+  }
 
-    .input-group{
-        .form-control{
-            background-color: #1a1a1a;
-            border-color: rgba(212,175,55,0.25);
-            color: #f0f0f0;
-            height: 2.5rem;
-            font-size: 0.85rem!important;
+  .input-group {
+    .form-control {
+      background-color: #1a1a1a;
+      border-color: rgba(212, 175, 55, 0.25);
+      color: #f0f0f0;
+      height: 2.5rem;
+      font-size: 0.85rem !important;
 
-            &::placeholder{
-                color: rgba(240, 240, 240, 0.35);
-            }
+      &::placeholder {
+        color: rgba(240, 240, 240, 0.35);
+      }
 
-            &::placeholder{
-                color: rgba(240, 240, 240, 0.35);
-            }
+      &::placeholder {
+        color: rgba(240, 240, 240, 0.35);
+      }
 
-            &:focus {
-                background-color: #1a1a1a;
-                border-color: #d4af37;
-                color: #f0f0f0;
-                box-shadow: 0 0 0 0.2rem rgba(212,175,55, 0.12);
-            }
-
-           
-        }
-
-
-        .btn-outline-warning{
-            border-color: rgba(212,175,55,0.5);
-            color: #d4af37;
-            height: 2.5rem;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-
-            &:hover{
-                background-color: #d4af37;
-                border-color: #d4af37;
-                color: #f0f0f0;
-            }
-        }
-    }
-
-    .list-inline-item a{
+      &:focus {
+        background-color: #1a1a1a;
+        border-color: #d4af37;
         color: #f0f0f0;
-        text-decoration: none;
-        font-size: 0.78rem;
-        letter-spacing: 0.3px;
-        transition: color 0.2s ease;
-
-        &:hover{
-            color: #d4af37!important;
-        }
+        box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.12);
+      }
     }
+
+    .btn-outline-warning {
+      border-color: rgba(212, 175, 55, 0.5);
+      color: #d4af37;
+      height: 2.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        background-color: #d4af37;
+        border-color: #d4af37;
+        color: #f0f0f0;
+      }
+    }
+  }
+
+  .list-inline-item a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #d4af37 !important;
+    }
+  }
 }
