@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Poggio del mostro: scopri la nostra selezione di vini "/>
+    <meta
+      name="description"
+      content="Poggio del mostro: scopri la nostra selezione di vini "
+    />
     <meta name="author" content="Team3BW" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Poggio del mosto: Contatti</title>
   </head>
 
   <body>
-
-       <nav class="navbar navbar-expand-md stycky-top">
+    <nav class="navbar navbar-expand-md sticky-top">
       <div class="container-fluid px-4">
         <a href="./home.html" class="navbar-brand">
-          <img src="./assets/img/log_navbar.png" alt="Logo Poggio del Mosto" />
+          <img src="./assets/img/logo_navbar.png" alt="Logo Poggio del Mosto" />
         </a>
 
         <!-- Hamburger button-->
@@ -56,8 +61,41 @@
       </div>
     </nav>
 
-
-    <main>
+    <main class="padding">
+      <!-- Inicio Formulario -->
+      <div class="col-12 mb-4">
+        <section class="content-box">
+          <h2>Form di contatti</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nome e Cognome</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Scrivi qua nome e cognome"
+              />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Scrivi qua la tua email"
+              />
+            </div>
+            <div class="col-12">
+              <label class="form-label">Messaggio</label>
+              <textarea class="form-control" rows="4" placeholder="Scrivi qua il tuo messaggio..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-dark w-100 w-md-auto px-5">
+                Invia
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Fim Formulario -->
       <!-- Inicio linha 1 -->
       <div class="row g-4">
         <!-- Contato Inicio -->
@@ -78,7 +116,7 @@
 
         <div class="col-12 col-lg-6">
           <section class="content-box h-100">
-            <h2>Mappa per raggiungere cantina Poggio del Mosto</h2>
+            <h2>Mappa per raggiungere la cantina Poggio del Mosto</h2>
             <div class="map-container">
               <div class="ratio ratio-16x9">
                 <iframe
@@ -93,103 +131,88 @@
             </div>
           </section>
         </div>
-        <!-- Fim area Maps  -->
-
-        <!-- Inicio Formulario -->
-        <div class="col-12 mt-4">
-          <section class="content-box">
-            <h2>Form di contatti</h2>
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Nome</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Scrivi nome cognome"
-                />
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control"  placeholder="Scrivi la tua email."" />
-              </div>
-              <div class="col-12">
-                <label class="form-label">Messaggio</label>
-                <textarea class="form-control" rows="4"></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-dark w-100 w-md-auto px-5">
-                  Invia
-                </button>
-              </div>
-            </form>
-          </section>
-        </div>
-        <!-- Fim Formulario -->
+          <!-- Fim area Maps  -->
 
         <!-- Fim linha 2 -->
       </div>
     </main>
 
-        <footer class="pt-5 pb-4">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-md-3">
-              <a href="./home.html">
-                <img src="./assets/img/logo.png" alt="Logo"
-                style="height: 55px;">
-              </a>
-                <p class="small text-white-50">
-                  Vini artigianali dall'anima del territorio, pensati per chi cerca emozioni oltre il calice.
-                </p>
-            </div>
-            <div class="col-md-3">
-              <h5 class="fw-bold mb-3">Contatti &amp; Links</h5>
-              <ul class="list-unstyled footer-links">
-                <li class="mb-2">
-                  <i class="bi bi-geo-alt-fill me-2"></i>
-                   Via Angelo Bargoni 8, Roma, IT
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-envelope-fill me-2"></i>
-                  <a href="">info@poggiodelmosto.it</a>
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-telephone-fill me-2"></i>
-                  <a href="">+39 0123 56789</a>
-                </li>
-                <li class="mb-2">
-                  <i class=""></i>
-                  Lun-Ven: 9:00 - 18:00
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-3">
-              <h5 class="fw-bold mb-3">Seguici</h5>
-              <div class="social-icons mb-3">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-              </div>
-              <p class="mb-1 small">Newsletter</p>
-              <div class="input-group input-group-sm">
-                <input type="email" class="form-control bg-dark text-whnite border-secondary" placeholder="La tua email">
-                <button class="btn btn-outline-warning btn-sm" type="button">Iscriviti</button>
-              </div>
-            </div>
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <a href="./home.html">
+              <img
+                src="./assets/img/logo.png"
+                alt="Logo"
+                style="height: 55px"
+              />
+            </a>
+            <p class="small text-white-50">
+              Vini artigianali dall'anima del territorio, pensati per chi cerca
+              emozioni oltre il calice.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3">Contatti &amp; Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Via Angelo Bargoni 8, Roma, IT
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <a href="">info@poggiodelmosto.it</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                <a href="">+39 0123 56789</a>
+              </li>
+              <li class="mb-2">
+                <i class=""></i>
+                Lun-Ven: 9:00 - 18:00
+              </li>
+            </ul>
           </div>
 
-          <div class="row border-top border-secondary pt-4 mt-4">
-            <div class="col-12 text-center">
-              <ul class="list-inline mb-0 small">
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                <li class="list-inline-item mx-2 text-secondary"><a href="#">Cookie Policy</a></li>
-                <li class="list-inline-item mx-2 text-secondary"><a href="#">Termini e Condizioni</a></li>
-              </ul>
-              <p class="small mt-3 mb-0 text-white-50">&copy; 2026 - Poggio del Mosto - Tutti i diritti riservati.</p>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3">Seguici</h5>
+            <div class="social-icons mb-3">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <p class="mb-1 small">Newsletter</p>
+            <div class="input-group input-group-sm">
+              <input
+                type="email"
+                class="form-control bg-dark text-white border-secondary"
+                placeholder="La tua email"
+              />
+              <button class="btn btn-outline-warning btn-sm" type="button">
+                Iscriviti
+              </button>
             </div>
           </div>
         </div>
+
+        <div class="row border-top border-secondary pt-4 mt-4">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-0 small">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item mx-2 text-secondary">
+                <a href="#">Cookie Policy</a>
+              </li>
+              <li class="list-inline-item mx-2 text-secondary">
+                <a href="#">Termini e Condizioni</a>
+              </li>
+            </ul>
+            <p class="small mt-3 mb-0 text-white-50">
+              &copy; 2026 - Poggio del Mosto - Tutti i diritti riservati.
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
