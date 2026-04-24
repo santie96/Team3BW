@@ -12492,8 +12492,12 @@ main {
   background-color: #0f0f0f;
 }
 
+.padding {
+  padding: 100px 250px;
+}
+
 .content-box {
-  background-color: rgb(26, 26, 26);
+  background-color: #212529;
   color: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -12520,7 +12524,7 @@ main {
   border: 1px solid transparent;
 }
 .content-box .form-control:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.2);
   border-color: white;
 }
 
@@ -12529,6 +12533,20 @@ main {
 }
 .ratio-16x9 iframe {
   border-radius: 4px;
+}
+
+.btn-dark {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: black;
+}
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+.list-unstyled {
+  font-family: var(--font-main);
 }
 
 .modal-overlay {
@@ -12743,6 +12761,23 @@ footer h5 {
   font-size: 0.9rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+footer .footer-logo {
+  height: auto !important;
+  width: 150px !important;
+}
+footer .footer-description {
+  font-size: 0.85rem;
+  color: var(--color-main);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+footer .footer-description-s {
+  font-size: 0.85rem;
+  color: var(--color-main);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-family: var(--font-main);
 }
 footer .footer-links a {
   color: #f0f0f0 !important;
