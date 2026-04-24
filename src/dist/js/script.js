@@ -24,7 +24,7 @@ const vini = [
     id: 4,
     nome: "La Monella",
     desc: "Fresca, vivace e leggermente impertinente. Questo bianco sprigiona aromi floreali e di agrumi, con una spiccata acidità che pulisce il palato e regala una sensazione di immediata spensieratezza estiva.",
-    prezzo: 69,
+    prezzo: 120,
     img: "vino_bianco_la_monella.webp",
   },
   {
@@ -64,7 +64,7 @@ vini.forEach((v) => {
       <div class="intestazione-card-s">
         <div class="intestazione-title-card-s">
           <h2 class="vino-titolo">${v.nome}</h2>
-              <span>${v.prezzo} €</span>
+              <span>€ ${v.prezzo}</span>
             </div>
              <p class="p-card-s vino-descrizione">
               ${v.desc}

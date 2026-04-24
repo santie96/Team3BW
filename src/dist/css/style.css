@@ -12927,9 +12927,19 @@ footer h5 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+footer .center-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 footer .footer-logo {
   height: auto !important;
   width: 150px !important;
+  transition: opacity 0.25s ease;
+}
+footer .footer-logo:hover {
+  opacity: 0.78;
 }
 footer .footer-description {
   font-size: 0.85rem;

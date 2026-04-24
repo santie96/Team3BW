@@ -66,8 +66,8 @@ const even = [
     id: 10,
     nome: "Botte senza fondo",
     desc: "Un'esperienza unica e misteriosa: una botte senza fondo, simbolo di abbondanza e generosità. Un calice che si riempie all'infinito, un invito a lasciarsi andare e a godere del momento senza limiti, tra risate e brindisi senza fine.",
-    prezzo: "1m",
-    img: "botte",
+    prezzo: "1M",
+    img: "botte_senza_fondo",
   }
 ];
 
@@ -75,13 +75,17 @@ const evenContenitore = document.querySelector("#cnt-even");
 let qnte = 1;
 
 even.forEach((e) => {
-  evenContenitore.innerHTML += `
+  // Verifichiamo se il prezzo deve avere il simbolo dell'euro
+  const visualizzaPrezzo = e.prezzo === "Prezzo su richiesta" 
+    ? e.prezzo 
+    : `€ ${e.prezzo}`;
 
+  evenContenitore.innerHTML += `
     <article class="article-e">
       <div class="intestazione-card-e">
         <div class="intestazione-title-card-e">
           <h2 id="titulo">${e.nome}</h2>
-          <span>${e.prezzo}€</span>
+          <span>${visualizzaPrezzo}</span>
         </div>
         <p id="pesp" class="p-card-e">
           ${e.desc}
@@ -91,17 +95,17 @@ even.forEach((e) => {
         <img id="imagem" src="./assets/img/${e.img}.webp" alt="${e.nome}" />
       </div>
       <div class="container-btn-e">
-      <button type="button" class="btn-add-carrello btn-acquista"
+        <button type="button" class="btn-add-carrello btn-acquista"
             data-id="${e.id}"
             data-nome="${e.nome}"
             data-desc="${e.desc}"
             data-img="./assets/img/${e.img}.webp"
             >
-                Scopri di piu
-              </button>
+            Scopri di più
+        </button>
+      </div>
     </article>`;
 });
-
 evenContenitore.addEventListener("click", (e) => {
   const btn = e.target.closest(".btn-acquista");
   if (!btn) return;
