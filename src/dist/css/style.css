@@ -12766,6 +12766,19 @@ footer .footer-logo {
   height: auto !important;
   width: 150px !important;
 }
+footer .footer-description {
+  font-size: 0.85rem;
+  color: var(--color-main);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+footer .footer-description-s {
+  font-size: 0.85rem;
+  color: var(--color-main);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-family: var(--font-main);
+}
 footer .footer-links a {
   color: #f0f0f0 !important;
   text-decoration: none;
