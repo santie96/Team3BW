@@ -1,5 +1,5 @@
 // Variabili
-$brand-color: rgb(26, 26, 26);
+@use "color-fonts" as *;
 
 @mixin tablet {
   @media (min-width: 768px) {
@@ -8,11 +8,17 @@ $brand-color: rgb(26, 26, 26);
 }
 
 main {
-  background-color: #0f0f0f;
+  background-color: $color-bg-dark;
+
+}
+
+.padding {
+  padding: 100px 250px;
+
 }
 
 .content-box {
-  background-color: $brand-color;
+  background-color: $color-bg-light-dark;
   color: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -38,7 +44,7 @@ main {
     border: 1px solid transparent;
 
     &:focus {
-      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 0 0.25rem #d4af3733;
       border-color: white;
     }
   }
@@ -50,4 +56,19 @@ main {
   iframe {
     border-radius: 4px;
   }
+}
+
+.btn-dark{
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+  color: black;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.list-unstyled{
+  font-family: var(--font-main);
 }
