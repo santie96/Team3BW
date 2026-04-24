@@ -15,7 +15,7 @@
 
 .track {
   display: flex;
-  width: calc(200%);
+  width: max-content;
   animation: scroll 70s linear infinite;
 }
 
