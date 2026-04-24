@@ -12038,7 +12038,7 @@ main {
 
 .track {
   display: flex;
-  width: 200%;
+  width: max-content;
   animation: scroll 70s linear infinite;
 }
 
