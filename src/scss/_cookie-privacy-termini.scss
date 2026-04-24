@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg-dark);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+h2,
+h3 {
+  color: #0f0f0f;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-family: var(--font-title);
+
+}
+h2 {
+  margin-top: 40px;
+  font-size: 24px;
+}
+h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+p {
+  margin-bottom: 15px;
+}
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 8px;
+}
+strong {
+  color: var(--color-secondary);
+}
+
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
