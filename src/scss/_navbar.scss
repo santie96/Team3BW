@@ -7,26 +7,13 @@
 }
 
 .navbar-brand img {
-    height: 70px;
-    width: auto;
+    width: 13rem;
     transition: opacity 0.25s ease;
 }
 
 .navbar-brand img:hover {
     opacity: 0.78;
 }
-
-/* .navbar-brand {
-    img {
-        height: 58px;
-        width: auto;
-        transition: opacity 0.25s ease;
-
-        &:hover {
-            opacity: 0.78;
-        }
-    }
-} */
 
 .nav-link {
     color: #f0f0f0 !important;
