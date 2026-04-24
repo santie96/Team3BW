@@ -11963,7 +11963,7 @@ main {
 
 .hero {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/cantina-botti-di-vino-in-una-cantina-in-spagna_223582-823.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/cantina-hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
