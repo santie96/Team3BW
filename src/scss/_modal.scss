@@ -48,3 +48,36 @@ textarea {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+.title-modale {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.btn-add-carrello-z {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  background-color: var(--color-secondary);
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color,
+    transform 0.3s ease;
+}
+
+.btn-add-carrello-z:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.form-control{
+  font-family: var(--font-main);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem #d4af3733;
+  border-color: var(--color-secondary);
+}

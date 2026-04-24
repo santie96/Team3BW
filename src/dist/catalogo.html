@@ -1,20 +1,29 @@
 <!doctype html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_footer.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catalogo</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-md sticky-top">
+  <body>
+    <nav class="navbar navbar-expand-md sticky-top">
       <div class="container-fluid px-4">
         <a href="./home.html" class="navbar-brand">
-          <img src="./assets/img/logo_navbar.webp" alt="Logo Poggio del Mosto" />
+          <img
+            src="./assets/img/logo_navbar.webp"
+            alt="Logo Poggio del Mosto"
+          />
         </a>
 
         <!-- Hamburger button-->
@@ -52,21 +61,25 @@
       </div>
     </nav>
 
-  <main>
-    <h1>I nostri vini</h1>
-    <section class="catalogo">
-      <div id="cnt-vini" class="container-items-catalogo">
+    <main>
+      <h1>I nostri vini</h1>
+      <section class="catalogo">
+        <div id="cnt-vini" class="container-items-catalogo">
           <!-- popolati da js -->
-      </div>
-    </section>
-  </main>
+        </div>
+      </section>
+    </main>
 
     <footer class="pt-5 pb-4">
       <div class="container">
         <div class="row gy-4">
           <div class="col-md-4">
             <a href="./home.html">
-              <img src="./assets/img/logo_footer.webp" alt="Logo" class="footer-logo"> 
+              <img
+                src="./assets/img/logo_footer.webp"
+                alt="Logo"
+                class="footer-logo"
+              />
             </a>
             <p class="footer-description">
               Vini artigianali dall'anima del territorio, pensati per chi cerca
@@ -119,12 +132,16 @@
         <div class="row border-top border-secondary pt-4 mt-4">
           <div class="col-12 text-center">
             <ul class="list-inline mb-0 small">
-              <li class="list-inline-item"><a href="./privacy.html" target="_blank">Privacy Policy</a></li>
+              <li class="list-inline-item">
+                <a href="./privacy.html" target="_blank">Privacy Policy</a>
+              </li>
               <li class="list-inline-item mx-2 text-secondary">
                 <a href="./cookie.html" target="_blank">Cookie Policy</a>
               </li>
               <li class="list-inline-item mx-2 text-secondary">
-                <a href="./termini.html" target="_blank">Termini e Condizioni</a>
+                <a href="./termini.html" target="_blank"
+                  >Termini e Condizioni</a
+                >
               </li>
             </ul>
             <p class="small mt-3 mb-0 text-white-50">
@@ -134,26 +151,43 @@
         </div>
       </div>
     </footer>
-  <!-- INICIO MODAL -->
+    <!-- INICIO MODAL -->
 
-    <div class="modal fade" id="modalAcquistoVino" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalAcquistoVino"
+      tabindex="-1"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content custom-experience-modal">
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
           <div class="modal-body p-4">
             <div class="row g-3 mb-3">
               <div class="col-12 col-md-5">
-                <div class="img-placeholder d-flex align-items-center justify-content-center">
-                  <img id="modal-img-destino" src="" style="width: 100%; border-radius: 12px; object-fit: cover;" />
-                                  
+                <div
+                  class="img-placeholder d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    id="modal-img-destino"
+                    src=""
+                    style="width: 100%; border-radius: 12px; object-fit: cover"
+                  />
                 </div>
               </div>
               <div class="col-12 col-md-7 d-flex flex-column gap-2">
-                <h2 id="modal-titulo-destino" class="fw-bold">Nome vino</h2>
-                <hr class="custom-divider" />
+                <h2 id="modal-titulo-destino" class="title-modale mg0">Nome vino</h2>
+                <hr class="border-warning border-2 opacity-100">
                 <div class="col-12">
                   <div class="description-box">
-                    <p id="modal-lip-destino" class="mb-0">Descrizione del vino selezionato</p>
+                    <p id="modal-lip-destino" class="mb-0">
+                      Descrizione del vino selezionato
+                    </p>
                   </div>
                 </div>
               </div>
@@ -162,29 +196,56 @@
             <form id="form-ordine-vino">
               <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="nomeCliente" placeholder="Il tuo nome" required />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nomeCliente"
+                    placeholder="Il tuo nome"
+                    required
+                  />
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" id="emailCliente" placeholder="La tua email" required />
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailCliente"
+                    placeholder="La tua email"
+                    required
+                  />
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control" id="messaggioCliente" placeholder="Eventuali note o messaggio (opzionale)" rows="2"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="messaggioCliente"
+                    placeholder="Eventuali note (opzionale)"
+                    rows="2"
+                  ></textarea>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-12">
-                  <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
-                    <button type="button" class="btn btn-outline-secondary" id="btn-decrementa">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-3 mb-3"
+                  >
+                    <button
+                      type="button"
+                      class="btn-add-carrello-z"
+                      id="btn-decrementa"
+                    >
                       <i class="bi bi-dash-circle fs-5"></i>
                     </button>
                     <span id="contador-qtd" class="fs-4 fw-semibold">1</span>
-                    <button type="button" class="btn btn-outline-secondary" id="btn-incrementa">
+                    <button
+                      type="button"
+                      class="btn-add-carrello-z"
+                      id="btn-incrementa"
+                    >
                       <i class="bi bi-plus-circle fs-5"></i>
                     </button>
                   </div>
-                  <button type="submit" class="btn btn-success w-100 mt-1">
-                    </i>Finalizzare l'ordine
+                  <button type="submit" class="btn-add-carrello-z w-100 mt-1">
+                    Acquista
                   </button>
                 </div>
               </div>
@@ -194,9 +255,8 @@
       </div>
     </div>
 
-  <!-- FIM MODAL -->
-  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
+    <!-- FIM MODAL -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

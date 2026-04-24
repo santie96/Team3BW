@@ -62,6 +62,13 @@ const even = [
     prezzo: "65",
     img: "picnic",
   },
+  {
+    id: 10,
+    nome: "Botte senza fondo",
+    desc: "Un'esperienza unica e misteriosa: una botte senza fondo, simbolo di abbondanza e generosità. Un calice che si riempie all'infinito, un invito a lasciarsi andare e a godere del momento senza limiti, tra risate e brindisi senza fine.",
+    prezzo: "1m",
+    img: "botte",
+  }
 ];
 
 const evenContenitore = document.querySelector("#cnt-even");
