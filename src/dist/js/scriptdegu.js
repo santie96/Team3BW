@@ -62,7 +62,7 @@ degu.forEach((d) => {
   <div class="card-deg">
       <div class="cnt-intestation-card-deg">
         <h2 class="m-0">${d.nome}</h2>
-        <span class="m-0">${d.prezzo}€</span> 
+        <span class="m-0">€ ${d.prezzo}</span> 
       </div>
       <div class="cnt-img-card-deg">
         <img src="./assets/img/${d.img}.webp" alt="${d.nome}" /> 
